@@ -5,7 +5,7 @@
 # Site
 title: 月小水长的个人博客
 subtitle: 十年饮冰，热血未凉。
-description: 一个不那么庸俗的人
+description: 饮冰室主人
 keywords:
 author: 月小水长
 language: zh-Hans
@@ -80,6 +80,15 @@ search:
      field: post
      format: html
      limit: 10000
+
+# Extensions,新增rss订阅
+plugins:
+    hexo-generator-feed
+#Feed Atom
+feed:
+    type: atom
+    path: atom.xml
+    limit: 20
 #动图
 live2d:
   enable: true
