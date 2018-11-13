@@ -34,12 +34,16 @@
 {% endif %}
 
 {% if theme.footer.theme.enable %}
+	<span>
+		<i class="fa fa-eye"></i>
+	</span>
 <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
 总浏览量:<span id="busuanzi_value_site_pv"></span>
 {% if theme.footer.powered and theme.footer.theme.enable %}
   <span class="post-meta-divider">|</span>
 {% endif %}
-总访问量:<span id="busuanzi_value_site_uv"></span>
+<span><i class="fa fa-user"></i></span>
+总访客数:<span id="busuanzi_value_site_uv"></span>
 {% endif %}
 
 <div class="powerd by">
@@ -56,7 +60,7 @@
 		mnum = Math.floor(minutes); if(String(mnum).length ==1 ){mnum = "0" + mnum;} 
 		seconds = (now - grt ) / 1000 - (24 * 60 * 60 * dnum) - (60 * 60 * hnum) - (60 * mnum); 
 		snum = Math.round(seconds); if(String(snum).length ==1 ){snum = "0" + snum;} 
-		document.getElementById("timeDate").innerHTML = "本站已安全运行 "+dnum+" 天 "; 
+		document.getElementById("timeDate").innerHTML = "已安全运行 "+dnum+" 天 "; 
 		document.getElementById("times").innerHTML = hnum + " 小时 " + mnum + " 分 " + snum + " 秒"; } setInterval("createtime()",250); </script>
 {% endif %}
 </div>

@@ -73,7 +73,7 @@
                 <i class="fa fa-calendar-o"></i>
               </span>
               {% if theme.post_meta.item_text %}
-                <span class="post-meta-item-text">{{ __('post.posted') }}</span>
+                <span class="post-meta-item-text">{{ __('post.posted') }}&#58;</span>
               {% endif %}
               <time title="{{ __('post.created') }}" itemprop="dateCreated datePublished" datetime="{{ moment(post.date).format() }}">
                 {{ date(post.date, config.date_format) }}
@@ -96,6 +96,8 @@
               </time>
             {% endif %}
           </span>
+		  
+		  
 
           {% if post.categories and post.categories.length and theme.post_meta.categories %}
             <span class="post-category" >
@@ -105,8 +107,8 @@
               <span class="post-meta-item-icon">
                 <i class="fa fa-folder-o"></i>
               </span>
-              {% if theme.post_meta.item_text %}
-                <span class="post-meta-item-text">{{ __('post.in') }}</span>
+              {% if theme.post_meta.item_text %}                 
+                <span class="post-meta-item-text">{{ __('post.in') }}&#58;</span>
               {% endif %}
               {% for cat in post.categories %}
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
@@ -198,6 +200,7 @@
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
+				<span class="post-meta-item-text">{{ __('post.comments') }}&#58;</span>
                 <a href="{{ url_for(post.path) }}#comments" itemprop="discussionUrl">
                   <span class="post-comments-count valine-comment-count" data-xid="{{ url_for(post.path) }}" itemprop="commentCount"></span>
                 </a>

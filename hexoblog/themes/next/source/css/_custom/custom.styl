@@ -1,1 +1,30 @@
-// Custom styles.
+// Custom styles. 
+//首页文章阴影样式
+.post {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 2px;
+    -webkit-box-shadow: 0 0 14px rgba(202, 203, 203, .5);
+    -moz-box-shadow: 0 0 14px rgba(202, 203, 204, .5);
+}
+.post-body p a{ 
+	color: #f70909;    //字体颜色
+	border-bottom: none; 
+	border-bottom: 1px solid #f70909;   //边框(下划线)颜色
+	&:hover { 
+		color: #FA5B5B;    //鼠标选中时
+		border-bottom: none; 
+		border-bottom: 1px solid #FA5B5B; 
+	} 
+}
+
+/* webkit, opera, IE9 */ 
+::selection { 
+	background: #1E90FF;   //道奇蓝
+	color: #ffffff;
+} 
+/* firefox */
+::-moz-selection {
+	background: #1E90FF;   //道奇蓝
+	color: #ffffff; 
+}

@@ -58,9 +58,11 @@ face_recognize_punchcard_lib.py等鸡肋文件放到useless文件夹里
 5. 为确保程序稳定性，每一个菜单里的按钮尽量成对操作。    
 
 -----------------------------------------------------------------------------------
-******Thanks for your attention;can you fork it if helping you? Thanks again******    
-****CopyRight 2391527690@qq.com;send me for allowance if you want to transmit it****    
-
-
-# [源代码地址](https://github.com/inspurer/WorkAttendanceSystem)   
+Thanks for your attention;     
+can you fork it if helping you? Thanks again！      
+CopyRight 2391527690@qq.com;      
+send me for allowance if you want to transmit it  
+# 源代码地址     
+[github](https://github.com/inspurer/WorkAttendanceSystem)   
+ 
 

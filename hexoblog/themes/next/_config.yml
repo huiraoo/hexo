@@ -27,10 +27,10 @@ override: false
 # For example, you put your favicons into `hexo-site/source/images` directory.
 # Then need to rename & redefine they on any other names, otherwise icons from Next will rewrite your custom icons in Hexo.
 favicon:
-  small: /images/favicon-16x16-next.png
-  medium: /images/favicon-32x32-next.png
-  apple_touch_icon: /images/apple-touch-icon-next.png
-  safari_pinned_tab: /images/logo.svg
+  small: /images/tao.png
+  medium: /images/tao.png
+  apple_touch_icon: /images/tao.png
+  #safari_pinned_tab: /images/logo.svg
   #android_manifest: /images/manifest.json
   #ms_browserconfig: /images/browserconfig.xml
 
@@ -94,7 +94,9 @@ index_with_subtitle: false
 menu:
   home: / || home
   about: /about/ || user
+  welfare: /welfare/ || coffee
   message: /message/ || comment
+  thank: /thank/ || heartbeat
   tags: /tags/ || tags
   categories: /categories/ || th
   archives: /archives/ || archive
@@ -130,7 +132,7 @@ scheme: Gemini
 social:
   GitHub: https://github.com/inspurer || github
   CSDN: https://blog.csdn.net/ygdxt || crosshairs
-  简书: https://www.jianshu.com/u/1b872cf08f32 || heartbeat
+  简书: https://www.jianshu.com/u/1b872cf08f32 || twitter
   #Google: https://plus.google.com/yourname || google
   #Twitter: https://twitter.com/yourname || twitter
   #FB Page: https://www.facebook.com/yourname || facebook
@@ -229,7 +231,7 @@ auto_excerpt:
 post_meta:
   item_text: true
   created_at: true
-  updated_at: false
+  updated_at: true
   categories: true
 
 # Post wordcount display settings
@@ -252,7 +254,7 @@ post_wordcount:
 #wechatpay: /images/wechatpay.jpg
 #alipay: /images/alipay.jpg
 #bitcoin: /images/bitcoin.png
-reward_comment: 您的支持将鼓励我继续创作！
+reward_comment: 您的赞助将鼓励我继续创作！
 wechatpay: /images/wechat.png
 alipay: /images/alipay.png
 
@@ -286,7 +288,7 @@ custom_logo:
 # Available value:
 #    normal | night | night eighties | night blue | night bright
 # https://github.com/chriskempson/tomorrow-theme
-highlight_theme: normal
+highlight_theme: night
 
 
 # ---------------------------------------------------------------
@@ -561,15 +563,15 @@ busuanzi_count:
   # custom uv span for the whole site
   site_uv: true
   site_uv_header: <i class="fa fa-user"></i>
-  site_uv_footer:
+  site_uv_footer: 访客数
   # custom pv span for the whole site
   site_pv: true
   site_pv_header: <i class="fa fa-eye"></i>
-  site_pv_footer:
+  site_pv_footer: 浏览量
   # custom pv span for one page only
   page_pv: true
   page_pv_header: <i class="fa fa-file-o"></i>
-  page_pv_footer:
+  page_pv_footer: 浏览量
 
 
 # Tencent analytics ID
@@ -824,6 +826,6 @@ daovoice_app_id: 46887a48 # 这里填你刚才获得的 app_id
 passage_end_tag:
   enabled: true
   
-
+display_updated: true
 # Theme version
 version: 5.1.4
